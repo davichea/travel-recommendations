@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore inspiring beaches, temples, and countries with Wanderly Travel.">
+  <title>Wanderly | Find your next adventure</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="brand-mark">✦</span> wanderly<span class="brand-dot">.</span></a>
+      <div class="nav-links">
+        <a class="active" aria-current="page" href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+      <form class="nav-search" id="searchForm" role="search">
+        <label class="sr-only" for="searchInput">Search destinations</label>
+        <input id="searchInput" type="search" placeholder="Try beach, temple, country…" autocomplete="off">
+        <button class="btn btn-search" type="submit">Search</button>
+        <button class="btn btn-clear" type="button" id="clearButton">Clear</button>
+      </form>
+    </nav>
+  </header>
+  <main>
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="hero-shade"></div>
+      <div class="container hero-content">
+        <div class="eyebrow"><span class="dot"></span> YOUR WORLD, YOUR WAY</div>
+        <h1 id="hero-heading">Find a place<br>that <em>moves you.</em></h1>
+        <p>From sun-soaked beaches to timeless temples, discover the destinations worth dreaming about.</p>
+        <a class="hero-cta" href="#discover">Explore destinations <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="hero-bottom container"><span>EXPLORE THE EXTRAORDINARY</span><span>01 / 03</span></div>
+    </section>
+    <section class="intro container" id="discover">
+      <div><p class="section-kicker">YOUR NEXT CHAPTER STARTS HERE</p><h2>Discover somewhere <em>new.</em></h2></div>
+      <p class="intro-copy">Where will curiosity take you? Search for <strong>beach</strong>, <strong>temple</strong>, or <strong>country</strong> above and we'll show you a few wonderful places to start.</p>
+    </section>
+    <section class="results-section container" id="recommendations" aria-labelledby="results-heading">
+      <div class="section-header"><div><p class="section-kicker">CURATED JUST FOR YOU</p><h2 id="results-heading">Featured destinations</h2></div><span id="resultCount" class="result-count">A little inspiration</span></div>
+      <p id="searchStatus" class="search-status" role="status" aria-live="polite">Pick a category above, or explore these featured places.</p>
+      <div class="cards" id="results" aria-live="polite">
+        <article class="destination-card"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=900&q=82" alt="Tropical beach with clear water" onerror="this.onerror=null;this.src='images/beach.svg'" loading="lazy"><div class="card-body"><span class="tag">BEACH</span><h3>Island escapes</h3><p>Find your perfect stretch of sand and sea.</p></div></article>
+        <article class="destination-card"><img src="https://images.unsplash.com/photo-1533676802871-eca1ae998cd5?w=900&q=82" alt="Traditional temple architecture" onerror="this.onerror=null;this.src='images/temple.svg'" loading="lazy"><div class="card-body"><span class="tag">TEMPLE</span><h3>Timeless wonders</h3><p>Explore history, architecture, and culture.</p></div></article>
+        <article class="destination-card"><img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=900&q=82" alt="Scenic Japanese city and architecture" onerror="this.onerror=null;this.src='images/country.svg'" loading="lazy"><div class="card-body"><span class="tag">COUNTRY</span><h3>New horizons</h3><p>See the world through a different lens.</p></div></article>
+      </div>
+    </section>
+    <section class="banner"><div class="container banner-inner"><div><p class="section-kicker">WANDER OFTEN, WONDER ALWAYS</p><h2>The world is waiting.</h2></div><a class="hero-cta dark-cta" href="about.html">Meet Wanderly <span aria-hidden="true">↗</span></a></div></section>
+  </main>
+  <footer class="footer"><div class="container footer-inner"><a class="brand" href="index.html">✦ wanderly<span class="brand-dot">.</span></a><p>Curiosity looks good on you. © <span id="year">2026</span> Wanderly.</p><div><a href="about.html">About Us</a><a href="contact.html">Contact Us</a></div></div></footer>
+</body>
+</html>
